@@ -7,6 +7,7 @@
     {% if item.desc %}
         <p>{{ item.desc }}</p>
     {% endif %}
+    생성일: {{ item.created_at|date:'SHORT_DATE_FORMAT' }}
     <hr/>
     <a href="/shop/">목록</a>
 {% endblock %}

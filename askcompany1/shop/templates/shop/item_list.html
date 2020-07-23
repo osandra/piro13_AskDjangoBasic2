@@ -12,6 +12,7 @@
                 {{ item.name }}
             </a>
                 {{ item.price }}원
+                {{ item.desc|linebreaks}}
             </li>
         {% endfor %}
     </ul>
