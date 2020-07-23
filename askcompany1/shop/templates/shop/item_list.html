@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>ask Django</h1>
+    <form action="" method="GET"> <!--검색창-->
+        <input type="text" name="q" value="{{ q }}">
+        <input type="submit" value="search">
+    </form>
+    <ul>
+        {% for item in item_list %}
+            <li>
+                {{ item.name }}
+                {{ item.price }}원
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
