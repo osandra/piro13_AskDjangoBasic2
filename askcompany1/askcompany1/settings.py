@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.humanize', #0,000화
     'django.contrib.messages',
     'django.contrib.staticfiles',
 

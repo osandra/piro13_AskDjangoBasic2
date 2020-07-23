@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Ask Company
+        {% endblock %}
+    </title>
+    <style>
+        body{background-color: #FFE761;}
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <h1>ask Django</h1>
+    {% block content %}
+    {% endblock %}
+    <h2 />
+    <p>&copy; 2020. Ask Company.</p>
+    {% block extra_body %}{% endblock %}
+</body>
+</html>
