@@ -1,11 +1,11 @@
 {% extends "layout.html" %} {% comment %} askcompany/templates에 바로 위치한 파일{% endcomment %}
-{% load static %}
+{% load fresh_static %}
 {% block title %}
 Shop by Ask Company
 {% endblock %}
 {% block extra_head %}
     {{ block.super }}
-    <link rel="stylesheet" href="{% static 'shop/shop.css' %}">
+    <link rel="stylesheet" href="{% fresh_static 'shop/shop.css' %}">
 {% endblock %}
 
 {% block extra_body %}
