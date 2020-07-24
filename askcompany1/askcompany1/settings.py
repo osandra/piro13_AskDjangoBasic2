@@ -130,3 +130,6 @@ STATICFILES_DIRS = [
 ]
 # 장고 디버그 띄워주는 게 가능한 IP
 INTERNAL_IPS = ['127.0.0.1']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -1,9 +1,6 @@
-from django.utils import timezone
-
 from django.db import models
 
-
-# Create your models here.
+from .utils import uuid_upload_to
 class Item(models.Model):
     name = models.CharField(max_length=100)
     desc = models.TextField(blank=True)
@@ -11,6 +8,7 @@ class Item(models.Model):
     is_publish = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    photo = models.ImageField(blank=True, upload_to=uuid_upload_to)
 
     def __str__(self):
         return self.name #데이터베이스에 바로 보이게
