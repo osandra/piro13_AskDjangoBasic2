@@ -5,7 +5,6 @@ from django.templatetags.static import StaticNode
 
 register = template.Library()
 
-
 class FreshStaticNode(StaticNode):
     def url(self, context):
         url = super().url(context)

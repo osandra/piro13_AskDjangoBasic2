@@ -13,5 +13,6 @@
     {% endif %}
     생성일: {{ item.created_at|date:'SHORT_DATE_FORMAT' }}
     <hr/>
-    <a href="/shop/">목록</a>
+    <a href="{% url "shop:item_list" %}">목록</a>
+    <a href="{% url "shop:item_edit" item.pk %}">수정</a>
 {% endblock %}
