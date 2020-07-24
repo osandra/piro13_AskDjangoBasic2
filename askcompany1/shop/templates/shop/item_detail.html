@@ -5,7 +5,7 @@
 
     {% if item.photo %}
         <img src="{{ item.photo.url }}" style="max-width: 100%;">
-    {% endif %}
+    {% endif %}<br />
     가격: {{ item.price|intcomma }}
 
     {% if item.desc %}

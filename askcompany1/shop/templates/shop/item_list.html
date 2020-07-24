@@ -1,5 +1,5 @@
 {% extends "shop/layout.html" %}
-{% load static %}
+{% load static humanize %}
 {% block content  %}
     {{ block.super }}
     <form action="" method="GET"> <!--검색창-->
@@ -12,7 +12,7 @@
             <a href = "{{ item.get_absolute_url }}">
                 {{ item.name }}
             </a>
-                {{ item.price }}원
+                {{ item.price|intcomma }}원
                 {{ item.desc|linebreaks}}
             </li>
         {% endfor %}
