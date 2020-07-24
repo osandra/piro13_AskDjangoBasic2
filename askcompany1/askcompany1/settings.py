@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.humanize', #0,000화
+    'django.contrib.humanize',  # 0,000화
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
@@ -65,7 +65,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'askcompany1', 'templates'),
         ],
-        'APP_DIRS': True, #각 앱에 있는 디렉토리 사용여부
+        'APP_DIRS': True,  # 각 앱에 있는 디렉토리 사용여부
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -124,6 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'askcompany1','static'),
+]
 # 장고 디버그 띄워주는 게 가능한 IP
 INTERNAL_IPS = ['127.0.0.1']

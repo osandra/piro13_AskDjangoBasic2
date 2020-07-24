@@ -1,0 +1,1 @@
+console.log("loaded askcompany1/static/company1/main.is")
